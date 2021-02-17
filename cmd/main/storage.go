@@ -22,7 +22,7 @@ type Tick struct {
     Ask       float64 `json:"ask"`
 }
 
-var mysqlSource = "mysql_user:mysql_password@tcp(localhost:5000)/mysql_db"
+var mysqlSource = "mysql_user:mysql_password@tcp(db:3306)/mysql_db"
 
 func initDb() *sql.DB {
     db, err := sql.Open("mysql", mysqlSource)

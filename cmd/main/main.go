@@ -15,7 +15,6 @@ func main() {
     if !checkTableExist(db) {
         createTable(db)
     }
-    readData(db)
 
     wg := sync.WaitGroup{}
 
